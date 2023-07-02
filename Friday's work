@@ -1,0 +1,60 @@
+#Using one of the comparison operators in Python, write a simple two-line program that takes the parameter n as input, which is an integer, and prints False if n is less than 100, and True if n is greater than or equal to 100.
+#Don't create any if blocks (we're going to talk about them very soon). Test your code using the data we've provided for you.
+
+n= int(input("Enter an integer:")) # Code to input any integer here
+# As per question if n<100, then print False
+# As per question if n>=100, then print True
+
+print("The entered integer is ", n, "which is greater or equal to 100...", n>100, "\n" )
+
+
+##################################################################
+
+#User inputs a Plant name
+
+plantName = input("Enter plant name: ")
+if plantName == "SPATH":
+    print('"Yes - Spath is the best plant ever!"\n')
+
+#'elif' NOT 'if' or will output following output:
+elif plantName == "spath":
+    print('"No, I want a big Spath!"\n')
+#    exit() #Left in to show that it is not required
+
+#If user input is not some variation of "Spath" then the below will happen
+else:
+    print('"SPATH! Not', plantName, end='!"\n\n')
+#    exit() #Left in to show that it is not required
+
+##################################################################
+
+#If citizen's income > 85,528 thalers, tax=18 percent of income minus 556.02 thalers due to tax relief
+#If citizen's income < 85,528 thalers, tax=14,839.02 thalers plus 32 percent of the surplus over 85,528 thalers.
+
+#Now,
+income = float(input("Enter the annual income: "))
+
+if income<85528:
+    tax= (income * (18/100)) - 556.02
+
+else:
+    income>85528
+    tax= ((income-85528)* (32/100)) + 14836.02
+    
+#If the calculated tax is less than zero, it means no tax.
+
+if tax<0:
+    tax=0.0
+    
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers", "\n")
+
+#If the person does Jury task, then the tax is halved. Answer "y" if  the person does jury task and "n" if the person doesn't do jury tasking.
+jury= input("Enter y or n:",)
+
+if jury== "y":
+    tax= print("The new tax is",tax/2, "thalers","\n")
+
+else:
+    jury== "n"
+    print("The new tax is:", tax, "thalers", "\n")
