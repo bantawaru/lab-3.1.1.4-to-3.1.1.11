@@ -62,10 +62,10 @@ else:
 ################################################################################
 
 #3.1.1.12 LAB: Essentials of the if-elif-else statement
-#User enters a year
+#Enter a year
 year = int(input("Enter a year: "))
 
-#If the user input is before 1582 the below ouput is shown;
+#If the user input is before 1582, below ouput is shown;
 if year < 1582:
 	print("Not within the Gregorian calendar period")
 
@@ -73,11 +73,11 @@ if year < 1582:
 elif year % 4:
 	print("It's a common year!")
 
-#otherwise, if the year number isn't divisible by 100, it's a leap year;
+#If the year number isn't divisible by 100, it's a leap year;
 elif year % 100:
     print("It's a leap year!")
 
-#otherwise, if the year number isn't divisible by 400, it's a common year;
+#If the year number isn't divisible by 400, it's a common year;
 elif year % 400:
 	print("It's a common year!")
 
